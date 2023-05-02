@@ -40,8 +40,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "task1": "nodemon src\\task1_1.js",
-    "task2": "nodemon src\\task1_2.js"
+    "task1": "nodemon src/task1_1.js",
+    "task2": "nodemon src/task1_2.js",
+    "main": "nodemon index.js"
   },
   "keywords": [
     "GMP",

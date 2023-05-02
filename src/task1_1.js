@@ -18,3 +18,11 @@ hsihsa
 
 */
 
+function reverse(str) {
+    return str.split("").reverse().join("") + "\n"
+}
+
+process.stdin.on("data", (data) => {
+    const str = data.toString();
+    console.log(reverse(str.replace("\n", "")));
+})
