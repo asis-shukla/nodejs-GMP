@@ -12,6 +12,7 @@
     "braces": "^3.0.2",
     "chokidar": "^3.5.3",
     "concat-map": "^0.0.1",
+    "csvtojson": "^2.0.10",
     "debug": "^3.2.7",
     "fill-range": "^7.0.1",
     "glob-parent": "^5.1.2",
