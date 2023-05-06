@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Code Snippets and Programs for tasks done",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "dependencies": {
     "abbrev": "^1.1.1",
     "anymatch": "^3.1.3",
@@ -38,13 +38,19 @@
     "undefsafe": "^2.0.5"
   },
   "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
     "nodemon": "^2.0.22"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "task1": "nodemon src/task1_1.js",
-    "task2": "nodemon src/task1_2.js",
-    "main": "nodemon index.js"
+    "build1": "babel src/task1_1.js -d dist",
+    "task1": "npm run build1 && nodemon dist/task1_1.js",
+    "build2": "babel src/task1_2.js -d dist",
+    "task2": "npm run build2 && nodemon dist/task1_2.js",
+    "build": "babel index.js -d dist",
+    "start": "npm run build && nodemon dist/index.js"
   },
   "keywords": [
     "GMP",
