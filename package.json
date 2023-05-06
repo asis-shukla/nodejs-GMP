@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Code Snippets and Programs for tasks done",
   "main": "index.js",
+  "type": "module",
   "dependencies": {
     "abbrev": "^1.1.1",
     "anymatch": "^3.1.3",
